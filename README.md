@@ -1,4 +1,6 @@
-## INICIANDO
+# Práctica Sequelize - Express - React
+
+## Iniciando
 
 - 1 Ejecutar comando npm i posicionado en la carpeta front.
 
