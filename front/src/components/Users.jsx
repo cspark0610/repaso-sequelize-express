@@ -1,45 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default ({ todosLosUsers, singleUserMethod }) => (
+export default ({ users }) => (
   <div>
-    <h1>USERS</h1>
-    {todosLosUsers.map((user) => {
-      return <h4><button onClick = {() => singleUserMethod(user.id)}>{user.name}</button></h4>;
-    })}
+    <h2>USERS</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            <h4>Nombre</h4>
+          </td>
+          <td>
+            <h4>Apellido</h4>
+          </td>
+          <td>
+            <h4>DNI</h4>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        {users.map((user) => {
+          return (
+            <tr key={user.id}>
+              <td>
+                <h4>
+                  <Link to={`/users/${user.id}`}>{user.name}</Link>
+                </h4>
+              </td>
+              <td>
+                <h4>
+                  <Link to={`/users/${user.id}`}>{user.lastname}</Link>
+                </h4>
+              </td>
+              <td>
+                <h4>
+                  <Link to={`/users/${user.id}`}>{user.dni}</Link>
+                </h4>
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   </div>
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    import React from "react";
-
-export default ({users, singleUserMethod}) => (
-    <div>
-        <h1>USERS</h1>
-        {
-            users.map((user) => (
-                <h4><button onClick = {() => singleUserMethod(user.id) }>{user.name}</button></h4>
-            ))
-        }
-    </div>
-    ) */
