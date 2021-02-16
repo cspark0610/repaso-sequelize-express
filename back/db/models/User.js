@@ -1,4 +1,4 @@
-const db = require("..");
+const db = require("../index");
 const S = require("sequelize");
 
 class User extends S.Model {}
@@ -20,5 +20,8 @@ User.init(
   },
   { sequelize: db, modelName: "user" }
 );
+
+
+
 
 module.exports = User;

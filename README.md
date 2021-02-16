@@ -49,7 +49,7 @@ Del mismo modo, deberán ir al back para comprender cómo está realizado el mod
 5. Crear en el **front** un container que realice una solicitud al servidor para traer todos los autos y renderizarlos en un componente hijo. Así mismo, deberán crear la ruta necesaria para poder ver este nuevo componente.
    Pueden observar cómo está realizado el de usuarios.
 6. Crear en el **back** la ruta correspondiente para buscar un auto en particular.
-7. Crear en el **front** un container que realice la solicitud por un auto en particular y que tenga un componente hijo que renderice los datos del auto. Tener en cuenta que, entre los datos del auto, deberá mostrarse quién es el dueño.
+7. Tener en cuenta que, entre los datos del auto, deberá mostrarse quién es el dueño.
    Deben investigar sobre el método **include de squelize** que deben utilizar del lado del servidor para poder enviar esta información.
    Asi mismo, deberán crear la ruta necesaria para poder ver este nuevo componente.
 8. En la vista de todos los autos, al hacer click en un auto debería redirigir a la vista de ese auto en particular.
