@@ -55,7 +55,10 @@ export default class AutosContainer extends Component {
       axios
         .post("/api/autos", { marca, modelo, anio, precio, ownerId, owner })
         .then((res) => res.data)
-        .then((auto) => this.setState({ autos: [...this.state.autos, auto] }));
+        .then((auto) => {
+          console.log(auto);
+         this.setState({ autos: [...this.state.autos, auto] })
+        });
     }
   
     render() {

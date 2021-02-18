@@ -36760,7 +36760,9 @@ var AutosContainer = /*#__PURE__*/function (_Component) {
       }).then(function (res) {
         return res.data;
       }).then(function (auto) {
-        return _this3.setState({
+        console.log(auto);
+
+        _this3.setState({
           autos: [].concat(_toConsumableArray(_this3.state.autos), [auto])
         });
       });
